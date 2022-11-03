@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+            <H1> Calculadora Simples </H1>
+    </header>
+    <section>
+        <div >
+            <input type="number" name="num1" id="nm1" placeholder="Digite o primeiro número">
+            <select name="sim" id="simb">
+                <option value="+"> + </option>
+                <option value="-"> - </option>
+                <option value="*"> x </option>
+                <option value="/" > / </option>
+            <input type="number" name="num2" id="nm2" placeholder="Digite o segundo número">
+
+            <input type="button" id="cac" value="Calcular" onclick="Calcular()">
+        </div>
+        <div >
+            <h3 id="res"></h3>
+        </div>
+    </section>
+    <footer>
+        <a href="https://github.com/MarcosVSantosF" target="_blank">&copy;MarcosVSantosF</a>       
+    </footer>
+    <Script src="script.js"> </Script>
+</body>
+</html>
