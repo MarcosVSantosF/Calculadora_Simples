@@ -19,8 +19,12 @@ function Calcular(n1, n2){
             break
         case '/' :
             calculo = (Number(n1) / Number(n2))
+            if (Number.isNaN(calculo)){ // Se o resultado da divisão for NaN, retorne a mensagem.
+                document.getElementById('res').innerHTML = 'Insira um divisível válido.'
+            } else {
             document.getElementById('res').innerHTML = `o resultado da Divisão de ${n1} + ${n2} é = ${calculo}`
             break
+            }
 
         
     }
