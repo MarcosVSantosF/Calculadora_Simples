@@ -25,7 +25,9 @@ function Calcular(n1, n2){
             document.getElementById('res').innerHTML = `o resultado da Divisão de ${n1} + ${n2} é = ${calculo}`
             break
             }
-
+        case '%' :
+            calculo = ((Number(n1) * Number(n2)) / 100)  
+            document.getElementById('res').innerHTML = `${n1}% de ${n2} é = ${calculo}`  
         
     }
 }
